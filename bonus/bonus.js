@@ -18,30 +18,33 @@ let squareElement = '';
 for (let i = 1; i <= 100; i++) {
   
   // Creo l'inizio dell'elemento
-  squareElement += '<div class="square">';
+  squareElement += '<div class="square';
   
 
   // SE è un multiplo sia di 3 che di 5 stamperà la stringa "FizzBuzz"
   if (i % 3 == 0 && i % 5 == 0) {
+    squareElement += ' fizzbuzz">';
     squareElement += 'FizzBuzz';
 
   }
   // ALTRIMENTI SE è un multiplo di 3 stamperà la stringa 'Fizz'
   else if (i % 3 == 0) {
+    squareElement += ' fizz">';
     squareElement += 'Fizz';
 
   } 
   // ALTRIMENTI SE è un multiplo di 5 stamperà la stringa 'Buzz'
   else if (i % 5 == 0) {
+    squareElement += ' buzz">';
     squareElement += 'Buzz';
 
   } else {
   // Stampo il numero di ogni ciclo
+    squareElement += '">';
     squareElement += i;
 
   }
 
-  
   // Creo la fine dell'elemento
   squareElement += '</div>';
 
