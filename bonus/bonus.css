@@ -1,0 +1,42 @@
+/*********** Palette color ***********/
+:root{
+    --default: #1389B2;
+    --fizz: #0BD6A1;
+    --buzz: #FFD166;
+    --fizzbuzz: #F0466F;
+
+    --bg-fizzbuzz: #083B4C;
+}
+
+
+/*********** Utilities ***********/
+.cs-flex {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+/*********** Generics ***********/
+body {
+    background-color: var(--bg-fizzbuzz);
+    text-align: center;
+}
+
+h1 {font-size: 5rem;}
+
+.square {
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    margin: 10px;
+    line-height: 100px;
+    background-color: var(--default);
+}
+
+.square.fizz {background-color: var(--fizz);}
+.square.buzz {background-color: var(--buzz);}
+.square.fizzbuzz {background-color: var(--fizzbuzz);}
